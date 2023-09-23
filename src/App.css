@@ -2,12 +2,16 @@
   /* background-image: url('background.jpg'); */
   background-position: bottom;
   background-color: #43c691;
-  background-size: cover;
   max-width:85vw;
   min-height: 90vh;
+  min-width: 130px;
   border-radius: 50px;
   margin-top: 3vh;
   border: #6fe1b0 10px solid;
+
+  background-image: url('pattern.png');
+  background-repeat: repeat;
+  background-position:bottom;
 }
 
 .container {
@@ -46,7 +50,7 @@ h1 {
   cursor: pointer;
 }
 
-.button:hover, .button:hover {
+.button:hover, .buttons:hover {
   background: #d9400e;
   color: #fff;
   box-shadow: 0px 1px 30px #eaeaea;
@@ -70,7 +74,7 @@ h1 {
 }
 
 .attention {
-  color: #f00050;
+  color: #b50202;
   font-family: Euclid Circular A Bold;
 }
 

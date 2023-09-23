@@ -26,7 +26,7 @@ function App() {
         <div className="container">
           <div className="head">
             <h1>
-              Промокод&nbsp;на 1000&nbsp;рублей в&nbsp;приложении Делимобиль
+              Промокод&nbsp;на 1000&nbsp;рублей в&nbsp;приложении Делимобиля
             </h1>
           </div>
           <div className="content">
@@ -49,7 +49,7 @@ function App() {
           </div>
           <div className="main-text">
             <p>
-              Вам зачислится 1000 рублей в&nbsp;приложении Делимобиль после ввода&nbsp;промокода.
+              Вам зачислится 1000 рублей в&nbsp;приложении Делимобиля после ввода&nbsp;промокода.
               Вы&nbsp;платите только&nbsp;50% от&nbsp;стоимости поездки! 
               Новым клиентам.
             </p>
