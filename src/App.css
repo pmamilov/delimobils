@@ -1,42 +1,105 @@
-#root {
-  max-width: 1280px;
+.main-container {
+  /* background-image: url('background.jpg'); */
+  background-color: #43c691;
+  min-height: 100vh;
+  background-size: cover;
+  width: 100%;
+  background-position: bottom;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 5px 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 55px;
+  font-family: Euclid Circular A Bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.promo {
+  font-size: 60px;
+  color: #3c3c3c;
+  font-weight: bold;
+  padding-right: 30px;
+  font-family: Euclid Circular A Bold;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background: #fff;
+  border-radius: 30px;
+  padding: 15px 40px;
+  color: #4D4D4D;
+  font-weight: 500;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #d9400e;
+  color: #fff;
+}
+
+.main-text {
+  font-style: normal;
+  font-size: 24px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.download {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.android {
+  padding-right: 20px;
+}
+
+.attention {
+  color: #f00050;
+  font-family: Euclid Circular A Bold;
+}
+
+@media screen and (max-width: 600px) {
+   .container {
+     width: 90%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 10px 0;
+ }
+  .content {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .copy {
+      margin-top: 30px;
+      margin-bottom: 20px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  h1 {
+      font-size: 33px;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .promo {
+      font-size: 44px;
+  }
 
-.read-the-docs {
-  color: #888;
+  .button {
+      font-size: 19px;
+  }
+
+  .main-text {
+      font-size: 18px;
+      font-weight: bolder;
+  }
 }
