@@ -1,21 +1,25 @@
 .main-container {
   /* background-image: url('background.jpg'); */
-  background-color: #43c691;
-  min-height: 100vh;
-  background-size: cover;
-  width: 100%;
   background-position: bottom;
+  background-color: #43c691;
+  background-size: cover;
+  max-width:85vw;
+  min-height: 90vh;
+  border-radius: 50px;
+  margin-top: 3vh;
+  border: #6fe1b0 10px solid;
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 0 0;
 }
 
 h1 {
   font-size: 55px;
+  max-width: 850px;
   font-family: Euclid Circular A Bold;
 }
 
@@ -32,7 +36,7 @@ h1 {
   align-items: center;
 }
 
-.button {
+.button, .buttons {
   background: #fff;
   border-radius: 30px;
   padding: 15px 40px;
@@ -42,9 +46,10 @@ h1 {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover, .button:hover {
   background: #d9400e;
   color: #fff;
+  box-shadow: 0px 1px 30px #eaeaea;
 }
 
 .main-text {
@@ -57,6 +62,7 @@ h1 {
 .download {
   display: inline-flex;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .android {
@@ -68,17 +74,16 @@ h1 {
   font-family: Euclid Circular A Bold;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
    .container {
      width: 90%;
-     max-width: 1200px;
-     margin: 0 auto;
      padding: 10px 0;
  }
   .content {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
+      min-width: 315px;
   }
 
   .copy {
@@ -97,6 +102,17 @@ h1 {
   .button {
       font-size: 19px;
   }
+
+  .buttons {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.download {
+  display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
   .main-text {
       font-size: 18px;

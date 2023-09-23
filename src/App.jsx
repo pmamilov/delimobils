@@ -7,9 +7,13 @@ function App() {
   const [isCopy, setIsCopy] = useState(false);
 
   const clipboardHandle = () => {
-    copy("REFBNK8Q");
-    setIsCopy(true);
-    //ym('000','reachGoal','copy')
+    if(!isCopy) {
+      copy("REFBNK8Q");
+      setIsCopy(true);
+      //ym('000','reachGoal','copy')
+    } else {
+      setIsCopy(false);
+    }
   };
 
   const changeTooltip = () => {
@@ -62,7 +66,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://play.google.com/store/apps/details?id=com.carshering&hl=ru&gl=US"
-                className="button"
+                className="buttons"
               >
                 android
               </a>
@@ -72,7 +76,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://apps.apple.com/ru/app/делимобиль-твой-каршеринг/id1038254296"
-                className="button"
+                className="buttons"
               >
                 iOS
               </a>
