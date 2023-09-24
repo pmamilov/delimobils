@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { YMInitializer, ym } from 'react-yandex-metrika';
+import { YMInitializer } from 'react-yandex-metrika';
+import ym from 'react-yandex-metrika';
 import copy from "copy-to-clipboard";
 
 import "./App.css";
