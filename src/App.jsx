@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { YMInitializer, ym } from 'react-yandex-metrika';
 import copy from "copy-to-clipboard";
 
 import "./App.css";
@@ -10,7 +11,7 @@ function App() {
     if (!isCopy) {
       copy("REFBNK8Q");
       setIsCopy(true);
-      ym(95042949,'reachGoal','copys');
+      ym(95042949, "reachGoal", "copys");
     } else {
       setIsCopy(false);
     }
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+      <YMInitializer accounts={[95042949]} />
       <div className="main-container">
         <div className="container">
           <div className="head">
@@ -34,15 +36,15 @@ function App() {
               <span onClick={clipboardHandle}>REFBNK8Q</span>
             </div>
             <div className="copy">
-                <span
-                  type="button"
-                  name="button"
-                  onClick={clipboardHandle}
-                  onMouseOut={changeTooltip}
-                  className="button"
-                >
-                  {!isCopy ? "скопировать" : "получилось!"}
-                </span>
+              <span
+                type="button"
+                name="button"
+                onClick={clipboardHandle}
+                onMouseOut={changeTooltip}
+                className="button"
+              >
+                {!isCopy ? "скопировать" : "получилось!"}
+              </span>
             </div>
           </div>
           <div className="main-text">
