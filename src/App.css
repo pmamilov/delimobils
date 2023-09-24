@@ -3,7 +3,6 @@
 	background: url('pattern.png'), linear-gradient(to bottom right, #38a67a, #28e1b9);
   max-width:85vw;
   /* min-height: 90vh; */
-  min-width: 130px;
   border-radius: 50px;
   margin-top: 3vh;
   border: #6fe1b0 10px solid;
@@ -208,7 +207,6 @@ h1 {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      min-width: 315px;
   }
 
   .copy {
