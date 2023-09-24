@@ -44,7 +44,7 @@ h1 {
 }
 
 .copy {
-  margin-top: 30px;
+  margin-top: 16px;
   margin-bottom: 20px;
 }
 
@@ -112,7 +112,7 @@ h1 {
 
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 890px) {
   .container {
     width: 90%;
     max-width: 1200px;
@@ -137,13 +137,14 @@ h1 {
   
   .content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
   }
   
   .button {
     background: #fff;
     border-radius: 5px;
-    padding: 15px 50px 18px 50px;
+    padding: 15px 30px 18px 30px;
     color: #4D4D4D;
     font-weight: 500;
     font-size: 28px;
@@ -165,6 +166,11 @@ h1 {
     color: #ffffff;
     box-shadow: 0px 1px 30px #eaeaea;
   }
+
+.copy {
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
   
   .main-text {
     font-style: normal;
@@ -195,7 +201,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 790px) {
   .main-container {
     margin-top: 2vh;
   }
@@ -206,11 +212,11 @@ h1 {
   .content {
       display: flex;
       align-items: flex-start;
-      flex-direction: column;
+      flex-direction: row;
   }
 
   .copy {
-      margin-top: 30px;
+      margin-top: 16px;
       margin-bottom: 20px;
   }
 
@@ -226,8 +232,9 @@ h1 {
 
   .button {
       font-size: 22px;
-      margin-left: 0px;
-      padding: 10px 50px 13px 50px;
+      margin-left: 10px;
+      margin-bottom: 0px;
+      padding: 10px 30px 13px 30px;
   }
 
   .buttons {
@@ -255,6 +262,17 @@ h1 {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+}
+
+
 @media screen and (max-width: 400px) {
 
   h1 {
@@ -264,6 +282,11 @@ h1 {
   .container {
     width: 90%;
     padding: 0px 0;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .button {
   font-size: 22px;
