@@ -10,7 +10,7 @@ function App() {
     if (!isCopy) {
       copy("REFBNK8Q");
       setIsCopy(true);
-      //ym('000','reachGoal','copy')
+      ym(95042949,'reachGoal','copys');
     } else {
       setIsCopy(false);
     }
