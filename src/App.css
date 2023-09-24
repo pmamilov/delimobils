@@ -1,17 +1,13 @@
 .main-container {
-  /* background-image: url('background.jpg'); */
-  background-position: bottom;
-  background-color: #43c691;
+  background: url('pattern.png'), -moz-linear-gradient(bottom right, #38a67a, #28e1b9);
+	background: url('pattern.png'), linear-gradient(to bottom right, #38a67a, #28e1b9);
   max-width:85vw;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   min-width: 130px;
   border-radius: 50px;
   margin-top: 3vh;
   border: #6fe1b0 10px solid;
-
-  background-image: url('pattern.png');
-  background-repeat: repeat;
-  background-position:bottom;
+  margin-bottom: 4vh;
 }
 
 .container {
@@ -23,16 +19,24 @@
 
 h1 {
   font-size: 55px;
-  max-width: 850px;
+  line-height: 65px;
+  max-width: 860px;
   font-family: Euclid Circular A Bold;
 }
 
 .promo {
-  font-size: 60px;
-  color: #3c3c3c;
+  font-size: 70px;
+  color: #3b290a;
   font-weight: bold;
-  padding-right: 30px;
+  padding: 0px 10px;
   font-family: Euclid Circular A Bold;
+  border: #01668d 3px dashed;
+  background-color: #e1c528;
+  border-radius: 10px;
+}
+
+.promo:hover {
+  background-color: #efdc71;
 }
 
 .content {
@@ -40,20 +44,40 @@ h1 {
   align-items: center;
 }
 
-.button, .buttons {
+.copy {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.button {
   background: #fff;
-  border-radius: 30px;
-  padding: 15px 40px;
+  border-radius: 5px;
+  padding: 15px 50px 18px 50px;
+  margin-left: 30px;
   color: #4D4D4D;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.buttons {
+  background: #4d4d4d;
+  border-radius: 11px;
+  padding: 15px 30px 18px 30px;
+  color: #d5ba91;
+  font-weight: 500;
+  font-size: 28px;
   cursor: pointer;
 }
 
 .button:hover, .buttons:hover {
   background: #d9400e;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 0px 1px 30px #eaeaea;
+}
+
+.radius {
+  border-radius: 50px !important;
 }
 
 .main-text {
@@ -66,11 +90,15 @@ h1 {
 .download {
   display: inline-flex;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 4vh;
 }
 
-.android {
-  padding-right: 20px;
+.ios {
+  padding-right: 30px;
+}
+
+.bank {
+  margin-top: 20px;
 }
 
 .attention {
@@ -78,7 +106,100 @@ h1 {
   font-family: Euclid Circular A Bold;
 }
 
-@media screen and (max-width: 740px) {
+.now {
+  color: #01668d;
+  font-family: Euclid Circular A Bold;
+}
+
+
+
+@media screen and (max-width: 860px) {
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+  
+  h1 {
+    font-size: 45px;
+    line-height: 55px;
+    max-width: 840px;
+    font-family: Euclid Circular A Bold;
+  }
+  
+  .promo {
+    font-size: 60px;
+    color: #3b290a;
+    font-weight: bold;
+    padding-right: 30px;
+    font-family: Euclid Circular A Bold;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px 50px 18px 50px;
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .buttons {
+    background: #474747;
+    border-radius: 50px;
+    padding: 15px 40px 15px 40px;
+    color: #d5ba91;
+    font-weight: 500;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .button:hover, .buttons:hover {
+    background: #d9400e;
+    color: #ffffff;
+    box-shadow: 0px 1px 30px #eaeaea;
+  }
+  
+  .main-text {
+    font-style: normal;
+    font-size: 24px;
+    width: 100%;
+    max-width: 650px;
+  }
+  
+  .download {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .ios {
+    padding-right: 30px;
+  }
+  
+  .attention {
+    color: #b50202;
+    font-family: Euclid Circular A Bold;
+  }
+  
+  .now {
+    color: #01668d;
+    font-family: Euclid Circular A Bold;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .main-container {
+    margin-top: 2vh;
+  }
    .container {
      width: 90%;
      padding: 10px 0;
@@ -97,29 +218,57 @@ h1 {
 
   h1 {
       font-size: 33px;
+      line-height: 40px;
   }
 
   .promo {
       font-size: 44px;
+      padding: 0px 0px;
   }
 
   .button {
-      font-size: 19px;
+      font-size: 22px;
+      margin-left: 0px;
+      padding: 10px 50px 13px 50px;
   }
 
   .buttons {
     font-size: 18px;
     padding: 10px 30px;
+    border-radius: 11px;
 }
 
-.download {
-  display: inline-flex;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-  .main-text {
-      font-size: 18px;
-      font-weight: bolder;
+  .ios {
+    padding-right: 15px;
+    margin-top: 3px;
   }
+
+  .download {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .main-text {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 0px 0;
+}
+  .buttons {
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 11px;
+}
+.promo {
+  font-size: 42px;
+  padding: 0px 0px;
+}
 }
