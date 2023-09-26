@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { YMInitializer } from 'react-yandex-metrika';
+import { YMInitializer } from "react-yandex-metrika";
 // import ym from 'react-yandex-metrika';
 import copy from "copy-to-clipboard";
 
@@ -50,15 +50,16 @@ function App() {
           </div>
           <div className="main-text">
             <p>
-              Вам зачислится 1000 рублей в&nbsp;приложении Делимобиля после
-              ввода&nbsp;промокода. Вы&nbsp;платите только&nbsp;50%
-              от&nbsp;стоимости поездки! Новым клиентам.
+              <span className="attention">Внимание!</span> Код нужно вводить
+              до&nbsp;первой аренды в&nbsp;разделе &laquo;Бонусы
+              и&nbsp;промокоды&raquo;. 1000&#8381; зачислится не&nbsp;сразу,
+              дело в&nbsp;том, что Делимобиль около часа проверяет промокод,
+              поэтому нужно подождать <img src="1000r.jpg" width="60px" />,
+              иначе не&nbsp;сработает!
             </p>
             <p>
-              <span className="attention">Внимание! </span>
-              Бонусы зачисляются не&nbsp;сразу, дело в&nbsp;том, что Делимобиль
-              около часа проверяет промокод, поэтому нужно подождать{" "}
-              <img src="1000r.jpg" width="60px" />, иначе не&nbsp;сработает!
+              Почему отдаю бесплатно? Потому что столько&nbsp;же бонусов получу
+              и&nbsp;я, после того, как вы&nbsp;его активируете.
             </p>
             <p>
               <span className="now">Теперь:</span> выберите операционную систему
