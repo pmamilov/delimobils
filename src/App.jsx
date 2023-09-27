@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { YMInitializer } from "react-yandex-metrika";
-// import ym from 'react-yandex-metrika';
 import copy from "copy-to-clipboard";
 
 import "./App.css";
@@ -12,7 +11,6 @@ function App() {
     if (!isCopy) {
       copy("REFBNK8Q");
       setIsCopy(true);
-      // ym(95042949, "reachGoal", "copys");
     } else {
       setIsCopy(false);
     }
